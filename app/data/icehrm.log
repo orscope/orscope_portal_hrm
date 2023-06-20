@@ -1,0 +1,370 @@
+[17-Jun-2023 18:55:00 Asia/Colombo] PHP Fatal error:  Uncaught Exception: Database is not connected in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:131
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(161): MyORM\MySqlActiveRecord->checkPreConditions()
+#1 /var/www/html/core/src/Model/BaseModel.php(337): MyORM\MySqlActiveRecord->Load()
+#2 /var/www/html/core/src/Classes/SettingsManager.php(101): Model\BaseModel->Load()
+#3 /var/www/html/core/server.includes.inc.php(93): Classes\SettingsManager->getSetting()
+#4 /var/www/html/core/crons/include.cron.php(11): include('/var/www/html/c...')
+#5 /var/www/html/core/crons/cron.php(9): include('/var/www/html/c...')
+#6 /var/www/html/app/cron.php(7): include('/var/www/html/c...')
+#7 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 131
+[18-Jun-2023 01:39:04 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: get_resource_type(): Argument #1 ($resource) must be of type resource, GdImage given in /var/www/html/core/src/Classes/SimpleImage.php:63
+Stack trace:
+#0 /var/www/html/core/src/Classes/SimpleImage.php(63): get_resource_type()
+#1 /var/www/html/core/src/Classes/FileService.php(247): Classes\SimpleImage->__destruct()
+#2 /var/www/html/core/src/Employees/User/Api/EmployeesActionManager.php(92): Classes\FileService->updateSmallProfileImage()
+#3 /var/www/html/core/service.php(170): Employees\User\Api\EmployeesActionManager->get()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/SimpleImage.php on line 63
+[18-Jun-2023 01:40:45 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = 1 AND employee = ?' at line 1 in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:422
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(422): mysqli->prepare()
+#1 /var/www/html/core/src/Model/BaseModel.php(395): MyORM\MySqlActiveRecord->Execute()
+#2 /var/www/html/core/src/Documents/Common/Model/EmployeeDocumentFinderProxy.php(34): Model\BaseModel->countRows()
+#3 /var/www/html/core/src/Documents/Common/Model/EmployeeDocument.php(85): Documents\Common\Model\EmployeeDocumentFinderProxy->getTotalCount()
+#4 /var/www/html/core/data.php(132): Documents\Common\Model\EmployeeDocument->getTotalCount()
+#5 /var/www/html/app/data.php(3): include('...')
+#6 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 422
+[18-Jun-2023 01:53:22 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:24 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:32 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:32 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:33 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:34 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:35 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:36 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:36 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:37 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:38 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:44 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:53:47 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:58:42 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:20 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:21 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:21 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:21 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:21 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:21 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:22 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:22 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 01:59:30 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 02:10:37 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 02:10:42 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 02:10:47 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 02:10:52 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[18-Jun-2023 02:11:26 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: array_intersect(): Argument #2 must be of type array, null given in /var/www/html/core/src/Classes/ModuleAccessService.php:65
+Stack trace:
+#0 /var/www/html/core/src/Classes/ModuleAccessService.php(65): array_intersect()
+#1 /var/www/html/core/src/Users/Common/Model/User.php(71): Classes\ModuleAccessService->isModuleEnabledForUser()
+#2 /var/www/html/core/src/Classes/BaseService.php(1026): Users\Common\Model\User->validateSave()
+#3 /var/www/html/core/service.php(82): Classes\BaseService->addElement()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/ModuleAccessService.php on line 65
+[19-Jun-2023 13:57:00 Asia/Colombo] PHP Fatal error:  Uncaught Exception: Database is not connected in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:131
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(161): MyORM\MySqlActiveRecord->checkPreConditions()
+#1 /var/www/html/core/src/Model/BaseModel.php(337): MyORM\MySqlActiveRecord->Load()
+#2 /var/www/html/core/src/Classes/SettingsManager.php(101): Model\BaseModel->Load()
+#3 /var/www/html/core/server.includes.inc.php(93): Classes\SettingsManager->getSetting()
+#4 /var/www/html/core/crons/include.cron.php(11): include('/var/www/html/c...')
+#5 /var/www/html/core/crons/cron.php(9): include('/var/www/html/c...')
+#6 /var/www/html/app/cron.php(7): include('/var/www/html/c...')
+#7 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 131
+[19-Jun-2023 14:15:30 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: Connection refused in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:50
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(50): mysqli->__construct()
+#1 /var/www/html/core/server.includes.inc.php(47): MyORM\MySqlActiveRecord->Connect()
+#2 /var/www/html/core/includes.inc.php(8): include('...')
+#3 /var/www/html/core/header.php(5): include('...')
+#4 /var/www/html/core/admin/dashboard/index.php(14): include('...')
+#5 /var/www/html/app/index.php(19): include('...')
+#6 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 50
+[19-Jun-2023 15:27:48 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: get_resource_type(): Argument #1 ($resource) must be of type resource, GdImage given in /var/www/html/core/src/Classes/SimpleImage.php:63
+Stack trace:
+#0 /var/www/html/core/src/Classes/SimpleImage.php(63): get_resource_type()
+#1 /var/www/html/core/src/Classes/FileService.php(247): Classes\SimpleImage->__destruct()
+#2 /var/www/html/core/src/Employees/User/Api/EmployeesActionManager.php(92): Classes\FileService->updateSmallProfileImage()
+#3 /var/www/html/core/service.php(170): Employees\User\Api\EmployeesActionManager->get()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/SimpleImage.php on line 63
+[19-Jun-2023 15:28:19 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: get_resource_type(): Argument #1 ($resource) must be of type resource, GdImage given in /var/www/html/core/src/Classes/SimpleImage.php:63
+Stack trace:
+#0 /var/www/html/core/src/Classes/SimpleImage.php(63): get_resource_type()
+#1 /var/www/html/core/src/Classes/FileService.php(247): Classes\SimpleImage->__destruct()
+#2 /var/www/html/core/src/Employees/User/Api/EmployeesActionManager.php(92): Classes\FileService->updateSmallProfileImage()
+#3 /var/www/html/core/service.php(170): Employees\User\Api\EmployeesActionManager->get()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/SimpleImage.php on line 63
+[19-Jun-2023 16:35:49 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = 1' at line 1 in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:422
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(422): mysqli->prepare()
+#1 /var/www/html/core/src/Model/BaseModel.php(395): MyORM\MySqlActiveRecord->Execute()
+#2 /var/www/html/core/src/Documents/Common/Model/EmployeeDocumentFinderProxy.php(34): Model\BaseModel->countRows()
+#3 /var/www/html/core/src/Documents/Common/Model/EmployeeDocument.php(85): Documents\Common\Model\EmployeeDocumentFinderProxy->getTotalCount()
+#4 /var/www/html/core/data.php(211): Documents\Common\Model\EmployeeDocument->getTotalCount()
+#5 /var/www/html/app/data.php(3): include('...')
+#6 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 422
+[19-Jun-2023 16:36:01 Asia/Colombo] PHP Fatal error:  Uncaught mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '1 = 1' at line 1 in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:422
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(422): mysqli->prepare()
+#1 /var/www/html/core/src/Model/BaseModel.php(395): MyORM\MySqlActiveRecord->Execute()
+#2 /var/www/html/core/src/Documents/Common/Model/EmployeeDocumentFinderProxy.php(34): Model\BaseModel->countRows()
+#3 /var/www/html/core/src/Documents/Common/Model/EmployeeDocument.php(85): Documents\Common\Model\EmployeeDocumentFinderProxy->getTotalCount()
+#4 /var/www/html/core/data.php(211): Documents\Common\Model\EmployeeDocument->getTotalCount()
+#5 /var/www/html/app/data.php(3): include('...')
+#6 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 422
+[19-Jun-2023 17:03:21 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: get_resource_type(): Argument #1 ($resource) must be of type resource, GdImage given in /var/www/html/core/src/Classes/SimpleImage.php:63
+Stack trace:
+#0 /var/www/html/core/src/Classes/SimpleImage.php(63): get_resource_type()
+#1 /var/www/html/core/src/Classes/FileService.php(247): Classes\SimpleImage->__destruct()
+#2 /var/www/html/core/src/Employees/User/Api/EmployeesActionManager.php(92): Classes\FileService->updateSmallProfileImage()
+#3 /var/www/html/core/service.php(170): Employees\User\Api\EmployeesActionManager->get()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/SimpleImage.php on line 63
+[19-Jun-2023 17:24:15 Asia/Colombo] PHP Fatal error:  Uncaught TypeError: get_resource_type(): Argument #1 ($resource) must be of type resource, GdImage given in /var/www/html/core/src/Classes/SimpleImage.php:63
+Stack trace:
+#0 /var/www/html/core/src/Classes/SimpleImage.php(63): get_resource_type()
+#1 /var/www/html/core/src/Classes/FileService.php(247): Classes\SimpleImage->__destruct()
+#2 /var/www/html/core/src/Employees/User/Api/EmployeesActionManager.php(92): Classes\FileService->updateSmallProfileImage()
+#3 /var/www/html/core/service.php(170): Employees\User\Api\EmployeesActionManager->get()
+#4 /var/www/html/app/service.php(3): include('...')
+#5 {main}
+  thrown in /var/www/html/core/src/Classes/SimpleImage.php on line 63
+[20-Jun-2023 02:02:00 Asia/Colombo] PHP Fatal error:  Uncaught Exception: Database is not connected in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:131
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(161): MyORM\MySqlActiveRecord->checkPreConditions()
+#1 /var/www/html/core/src/Model/BaseModel.php(337): MyORM\MySqlActiveRecord->Load()
+#2 /var/www/html/core/src/Classes/SettingsManager.php(101): Model\BaseModel->Load()
+#3 /var/www/html/core/server.includes.inc.php(93): Classes\SettingsManager->getSetting()
+#4 /var/www/html/core/crons/include.cron.php(11): include('/var/www/html/c...')
+#5 /var/www/html/core/crons/cron.php(9): include('/var/www/html/c...')
+#6 /var/www/html/app/cron.php(7): include('/var/www/html/c...')
+#7 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 131
