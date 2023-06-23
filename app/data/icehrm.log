@@ -368,3 +368,14 @@ Stack trace:
 #6 /var/www/html/app/cron.php(7): include('/var/www/html/c...')
 #7 {main}
   thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 131
+[22-Jun-2023 17:39:00 Asia/Colombo] PHP Fatal error:  Uncaught Exception: Database is not connected in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php:131
+Stack trace:
+#0 /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php(161): MyORM\MySqlActiveRecord->checkPreConditions()
+#1 /var/www/html/core/src/Model/BaseModel.php(337): MyORM\MySqlActiveRecord->Load()
+#2 /var/www/html/core/src/Classes/SettingsManager.php(101): Model\BaseModel->Load()
+#3 /var/www/html/core/server.includes.inc.php(93): Classes\SettingsManager->getSetting()
+#4 /var/www/html/core/crons/include.cron.php(11): include('/var/www/html/c...')
+#5 /var/www/html/core/crons/cron.php(9): include('/var/www/html/c...')
+#6 /var/www/html/app/cron.php(7): include('/var/www/html/c...')
+#7 {main}
+  thrown in /var/www/html/core/lib/composer/vendor/icehrm/php-active-record/src/MyORM/MySqlActiveRecord.php on line 131
